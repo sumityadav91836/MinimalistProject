@@ -40,11 +40,13 @@
   margin-right: 18px;
   outline: none;
   cursor: pointer;
+  font-size: 30px;
+  color: black;
 }
 
 .quick-view-card {
-  width: 750px;
-  height: 600px;
+  width: 800px;
+  height: fit-content;
   padding: 30px;
   margin: 30px 0;
   display: flex;
@@ -108,70 +110,48 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .product-card {
     width: 90%;
     height: 80vh;
     margin: 15px 0;
   }
-}
 
-.quick-view-card {
-  width: 70%;
-  height: 60vh;
-  padding: 30px 80px;
-  margin: 30px 0;
-  display: flex;
-  background-color: #fff;
-  border: 1px solid black;
-}
+  .quick-view-card {
+    width: 85vw;
+    flex-direction: column;
+    padding: 15px;
+  }
 
-.img-container {
-  height: 100%;
-  width: 60%;
-}
+  .img-container {
+    height: auto;
+    width: 85vw;
+  }
 
-.main-img {
-  width: 100%;
-  height: 65vh;
-}
+  .main-img {
+    width: 85vw;
+    height: 40vh;
+  }
 
-.optional-img {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
+  .option-img {
+    height: 120px;
+    width: 100px;
+  }
 
-.option-img {
-  height: 120px;
-  width: 200px;
-}
+  .optional-img {
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
 
-.text-decoration {
-  text-align: left;
-  margin-left: 20px;
-}
+  .product-heading {
+    margin: 0 0 8px 0;
+  }
 
-.hr-line {
-  margin-left: 20px;
-  border-top: 1px dashed red;
-}
+  .text-decoration {
+    margin: 5px 0 5px 0;
+  }
 
-.product-heading {
-  margin: 0 0 16px 20px;
-}
-
-.choose-now-button {
-  background-color: red;
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-  width: 100%;
-  margin: 8px 20px;
-  height: 50px;
-  border: none;
-  outline: none;
-  cursor: pointer;
+  .choose-now-button {
+    margin: 8px 0;
+  }
 }
